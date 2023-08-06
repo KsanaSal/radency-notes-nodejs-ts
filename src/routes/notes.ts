@@ -14,6 +14,15 @@ router.get('/', async (req, res, next) => {
   }
 });
 
+router.get('/stats', async (req, res, next) => {
+  try {
+    const notes = await notesOperations.statsNotes();
+    res.json({ status: 'success', code: 200, data: { result: notes } });
+  } catch (error) {
+    next(error);
+  }
+});
+
 router.get('/:id', async (req, res, next) => {
   try {
     const { id } = req.params;

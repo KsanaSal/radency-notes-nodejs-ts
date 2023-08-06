@@ -20,6 +20,33 @@ const getNotesById = async (id: string) => {
   return notes.filter((el) => el.recordId === recordId)[0] || null;
 };
 
-const notes = { listNotes, getNotesById };
+function countArchivedNotesByCategory(notes: INote[]) {
+  const countByCategory = {};
+
+  notes.forEach((note) => {
+    const categoryId = note.categoryId;
+    const categoryName = note.categoryName;
+    const isArchived = note.archived;
+
+    if (!countByCategory[categoryName]) {
+      countByCategory[categoryName] = { categoryId, archived: 0, notArchived: 0 };
+    }
+
+    if (isArchived) {
+      countByCategory[categoryName].archived++;
+    } else {
+      countByCategory[categoryName].notArchived++;
+    }
+  });
+
+  return countByCategory;
+}
+
+const statsNotes = async () => {
+  const result: INote[] = await listNotes();
+  return countArchivedNotesByCategory(result);
+};
+
+const notes = { listNotes, getNotesById, statsNotes };
 
 export default notes;
