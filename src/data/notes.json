@@ -1,7 +1,7 @@
 [
   {
-    "categoryId": "3",
-    "categoryName": "Ideaggg",
+    "categoryId": "1",
+    "categoryName": "Task",
     "categoryImg": "iconQuote",
     "createDate": "August 08, 2023",
     "content": "Bread, milk, tomatoes, eggplants, yogurt, ice cream, chocolate",
@@ -118,16 +118,6 @@
     "createDate": "August 7, 2023"
   },
   {
-    "categoryId": "3",
-    "categoryName": "Ideag",
-    "categoryImg": "iconQuote",
-    "content": "Bread, milk, tomatoes, eggplants, yogurt, ice cream, chocolate",
-    "nameTitle": "Shopping list",
-    "recordId": "e2e8a0fc-677b-4a36-b9e7-fc1e1f6f9915",
-    "archived": false,
-    "createDate": "August 7, 2023"
-  },
-  {
     "categoryId": "2",
     "categoryName": "Random Thought",
     "categoryImg": "iconRandomThought",
@@ -135,6 +125,26 @@
     "nameTitle": "The theory",
     "recordId": "d3c6cd3f-ebec-49b8-aa2d-4bf079b1e901",
     "archived": true,
+    "createDate": "August 7, 2023"
+  },
+  {
+    "categoryId": "2",
+    "categoryName": "Random Thought",
+    "categoryImg": "iconRandomThought",
+    "content": "Bread, milk, tomatoes, eggplants, yogurt, ice cream, chocolate",
+    "nameTitle": "The theory vvvvv",
+    "recordId": "40c6c59c-fb89-400d-a219-50720db28986",
+    "archived": false,
+    "createDate": "August 7, 2023"
+  },
+  {
+    "categoryId": "2",
+    "categoryName": "Random Thought",
+    "categoryImg": "iconRandomThought",
+    "content": "Bread, milk, tomatoes, eggplants, yogurt, ice cream, chocolate",
+    "nameTitle": "The theory vvvvv ggg",
+    "recordId": "9b20d890-bbf4-41a3-81e6-fd9868fd853a",
+    "archived": false,
     "createDate": "August 7, 2023"
   }
 ]
