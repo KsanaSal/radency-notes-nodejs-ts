@@ -14,7 +14,7 @@ interface IExtendedError extends Error {
 const HttpError = (status: number, message = messages[status]) => {
   const error: IExtendedError = new Error(message);
   error.status = status;
-  return message;
+  return error;
 };
 
 export default HttpError;

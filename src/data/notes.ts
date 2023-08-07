@@ -60,7 +60,6 @@ const deleteNote = async (id: string) => {
 };
 
 const addNote = async (body: INote) => {
-  console.log(body);
   const note = await listNotes();
   body.recordId = uuidv4();
   body.archived = false;
@@ -75,10 +74,8 @@ const addNote = async (body: INote) => {
 };
 
 const updateNote = async (id: string, body: INote) => {
-  console.log(id);
-  console.log(body);
   const notes = await listNotes();
-  const index = notes.findIndex((item) => item.recordId === id);
+  const index = notes.findIndex((el: INote) => el.recordId === id);
   if (index === -1) {
     return null;
   }

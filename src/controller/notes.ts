@@ -1,7 +1,8 @@
+import { Request, Response, NextFunction } from 'express';
 import notesOperations from '../data/notes.js';
 import HttpError from '../helpers/httpError.js';
 
-const getAll = async (req, res, next) => {
+const getAll = async (req: Request, res: Response, next: NextFunction) => {
   try {
     const notes = await notesOperations.listNotes();
     res.json({ status: 'success', code: 200, data: { result: notes } });
@@ -10,7 +11,7 @@ const getAll = async (req, res, next) => {
   }
 };
 
-const getByStats = async (req, res, next) => {
+const getByStats = async (req: Request, res: Response, next: NextFunction) => {
   try {
     const notes = await notesOperations.statsNotes();
     res.json({ status: 'success', code: 200, data: { result: notes } });
@@ -19,7 +20,7 @@ const getByStats = async (req, res, next) => {
   }
 };
 
-const getById = async (req, res, next) => {
+const getById = async (req: Request, res: Response, next: NextFunction) => {
   try {
     const { id } = req.params;
     const note = await notesOperations.getNotesById(id);
@@ -36,7 +37,7 @@ const getById = async (req, res, next) => {
   }
 };
 
-const deleteById = async (req, res, next) => {
+const deleteById = async (req: Request, res: Response, next: NextFunction) => {
   try {
     const { id } = req.params;
     const result = await notesOperations.deleteNote(id);
@@ -53,7 +54,7 @@ const deleteById = async (req, res, next) => {
   }
 };
 
-const postNote = async (req, res, next) => {
+const postNote = async (req: Request, res: Response, next: NextFunction) => {
   try {
     const note = await notesOperations.addNote(req.body);
     res.status(201).json({
@@ -66,7 +67,7 @@ const postNote = async (req, res, next) => {
   }
 };
 
-const patchById = async (req, res, next) => {
+const patchById = async (req: Request, res: Response, next: NextFunction) => {
   try {
     const { id } = req.params;
     const result = await notesOperations.updateNote(id, req.body);

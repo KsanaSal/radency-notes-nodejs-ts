@@ -1,4 +1,4 @@
-import express, { Request, Response } from 'express';
+import express, { NextFunction, Request, Response } from 'express';
 import logger from 'morgan';
 import cors from 'cors';
 import notesRouter from './routes/notes.js';
@@ -13,15 +13,11 @@ app.use(express.json());
 
 app.use('/notes', notesRouter);
 
-app.use((req, res) => {
-  res.status(404).json({ message: 'Not found' });
-});
-
 interface IExtendedError extends Error {
   status?: number;
 }
 
-app.use((err: IExtendedError, req: Request, res: Response) => {
+app.use((err: IExtendedError, req: Request, res: Response, next: NextFunction) => {
   const { status = 500, message = 'Server error' } = err;
   res.status(status).json({ message: message });
 });
