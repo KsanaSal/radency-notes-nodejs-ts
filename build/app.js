@@ -1,11 +1,12 @@
 import express from 'express';
+import logger from 'morgan';
+import cors from 'cors';
 const app = express();
-// const port = 3000;
+const formatsLogger = app.get('env') === 'development' ? 'dev' : 'short';
+app.use(logger(formatsLogger));
+app.use(cors());
 app.get('/', (req, res) => {
     res.send('The sedulous hyena ate the antelope!');
 });
-// app.listen(port, () => {
-//   return console.log(`server is listening on ${port} gggg`);
-// });
 export default app;
 //# sourceMappingURL=app.js.map
