@@ -1,108 +1,160 @@
 [
-    {
-        "categoryId": "1",
-        "categoryName": "Task",
-        "categoryImg": "iconListCheck",
-        "createDate": "July 29, 2023",
-        "content":
-            "Bread, milk, tomatoes, eggplants, yogurt, ice cream, chocolate",
-        "nameTitle": "Shopping list",
-        "recordId": "1663524239469",
-        "archived": true
-    },
-    {
-        "categoryId": "1",
-        "categoryName": "Task",
-        "categoryImg": "iconListCheck",
-        "createDate": "August 08, 2023",
-        "content": "Move the trip to the theater from 08.08.2023 to 08.12.2023",
-        "nameTitle": "Theater",
-        "recordId": "166356581685225",
-        "archived": false
-    },
-    {
-        "categoryId": "1",
-        "categoryName": "Task",
-        "categoryImg": "iconListCheck",
-        "createDate": "July 31, 2023",
-        "content": "The start learn a new programme Angular",
-        "nameTitle": "Books",
-        "recordId": "166352427247887",
-        "archived": false
-    },
-    {
-        "categoryId": "3",
-        "categoryName": "Idea",
-        "categoryImg": "iconIdea",
-        "createDate": "August 1, 2024",
-        "content": "I am implementing a new artistic wall painting",
-        "nameTitle": "New features",
-        "recordId": "1663524307213",
-        "archived": true
-    },
-    {
-        "categoryId": "1",
-        "categoryName": "Task",
-        "categoryImg": "iconListCheck",
-        "createDate": "August 08, 2023",
-        "content":
-            "The planned trip to Prague is postponed from 09.25.2023 to 12.23.2023",
-        "nameTitle": "Travel",
-        "recordId": "1663565816886",
-        "archived": false
-    },
-    {
-        "categoryId": "1",
-        "categoryName": "Task",
-        "categoryImg": "iconListCheck",
-        "createDate": "July 25, 2023",
-        "content":
-            "Wine, bread, sausage, cheese, cookies, tomatoes, cucumbers, cabbage, meat, cake, coffee, tea, sour cream",
-        "nameTitle": "Shopping list",
-        "recordId": "1663525334145",
-        "archived": true
-    },
-    {
-        "categoryId": "2",
-        "categoryName": "Random Thought",
-        "categoryImg": "iconRandomThought",
-        "createDate": "July 27, 2023",
-        "content":
-            "The theory of evolution about the origin of humans from aliens",
-        "nameTitle": "The theory evolution",
-        "recordId": "1663525342591",
-        "archived": false
-    },
-    {
-        "categoryId": "4",
-        "categoryName": "Quote",
-        "categoryImg": "iconQuote",
-        "createDate": "June 27, 2023",
-        "content":
-            "Here comes 40. I'm feeling my age and I've ordered the Ferrari. I'm going to get the whole mid-life crisis package.",
-        "nameTitle": "Keanu Reeves",
-        "recordId": "1663525348710",
-        "archived": false
-    },
-    {
-        "categoryId": "1",
-        "categoryName": "Task",
-        "categoryImg": "iconListCheck",
-        "createDate": "July 29, 2023",
-        "content": "Dentist appointment postponed from 07/29/2023 to 08/02/2023",
-        "nameTitle": "Dentist",
-        "recordId": "1663565816123",
-        "archived": false
-    },
-    {
-        "categoryId": "3",
-        "categoryName": "Idea",
-        "categoryImg": "iconQuote",
-        "createDate": "September 1, 2023",
-        "content":
-            "Change hairstyle and hair color. Add new accessories to your wardrobe.",
-        "nameTitle": "New image",
-        "recordId": "1663565816833454",
-        "archived": false
-    }
+  {
+    "categoryId": "1",
+    "categoryName": "Task",
+    "categoryImg": "iconQuote",
+    "createDate": "August 08, 2023",
+    "content": "Bread, milk, tomatoes, eggplants, yogurt, ice cream, chocolate",
+    "nameTitle": "Shopping list",
+    "recordId": "166356581685225",
+    "archived": false
+  },
+  {
+    "categoryId": "1",
+    "categoryName": "Task",
+    "categoryImg": "iconListCheck",
+    "createDate": "July 31, 2023",
+    "content": "The start learn a new programme Angular",
+    "nameTitle": "Books",
+    "recordId": "166352427247887",
+    "archived": false
+  },
+  {
+    "categoryId": "3",
+    "categoryName": "Idea",
+    "categoryImg": "iconIdea",
+    "createDate": "August 1, 2024",
+    "content": "I am implementing a new artistic wall painting",
+    "nameTitle": "New features",
+    "recordId": "1663524307213",
+    "archived": true
+  },
+  {
+    "categoryId": "1",
+    "categoryName": "Task",
+    "categoryImg": "iconListCheck",
+    "createDate": "August 08, 2023",
+    "content": "The planned trip to Prague is postponed from 09.25.2023 to 12.23.2023",
+    "nameTitle": "Travel",
+    "recordId": "1663565816886",
+    "archived": false
+  },
+  {
+    "categoryId": "1",
+    "categoryName": "Task",
+    "categoryImg": "iconListCheck",
+    "createDate": "July 25, 2023",
+    "content": "Wine, bread, sausage, cheese, cookies, tomatoes, cucumbers, cabbage, meat, cake, coffee, tea, sour cream",
+    "nameTitle": "Shopping list",
+    "recordId": "1663525334145",
+    "archived": true
+  },
+  {
+    "categoryId": "2",
+    "categoryName": "Random Thought",
+    "categoryImg": "iconRandomThought",
+    "createDate": "July 27, 2023",
+    "content": "The theory of evolution about the origin of humans from aliens",
+    "nameTitle": "The theory evolution",
+    "recordId": "1663525342591",
+    "archived": false
+  },
+  {
+    "categoryId": "4",
+    "categoryName": "Quote",
+    "categoryImg": "iconQuote",
+    "createDate": "June 27, 2023",
+    "content": "Here comes 40. I'm feeling my age and I've ordered the Ferrari. I'm going to get the whole mid-life crisis package.",
+    "nameTitle": "Keanu Reeves",
+    "recordId": "1663525348710",
+    "archived": false
+  },
+  {
+    "categoryId": "1",
+    "categoryName": "Task",
+    "categoryImg": "iconListCheck",
+    "createDate": "July 29, 2023",
+    "content": "Dentist appointment postponed from 07/29/2023 to 08/02/2023",
+    "nameTitle": "Dentist",
+    "recordId": "1663565816123",
+    "archived": false
+  },
+  {
+    "categoryId": "3",
+    "categoryName": "Idea",
+    "categoryImg": "iconQuote",
+    "createDate": "September 1, 2023",
+    "content": "Change hairstyle and hair color. Add new accessories to your wardrobe.",
+    "nameTitle": "New image",
+    "recordId": "1663565816833454",
+    "archived": false
+  },
+  {
+    "categoryId": "1",
+    "categoryName": "Task",
+    "categoryImg": "iconListCheck",
+    "content": "Bread, milk, tomatoes, eggplants, yogurt, ice cream, chocolate",
+    "nameTitle": "Shopping list",
+    "recordId": "d9c49503-9304-4ba4-b5c5-7c30ea25c1f3"
+  },
+  {
+    "categoryId": "1",
+    "categoryName": "Task",
+    "categoryImg": "iconListCheck",
+    "content": "Bread, milk, tomatoes, eggplants, yogurt, ice cream, chocolate",
+    "nameTitle": "Shopping list",
+    "recordId": "1e8c3dac-13e3-4d59-9f6d-52c510160316",
+    "archived": false,
+    "createDate": "2023-08-07T08:02:06.453Z"
+  },
+  {
+    "categoryId": "1",
+    "categoryName": "Task",
+    "categoryImg": "iconListCheck",
+    "content": "Bread, milk, tomatoes, eggplants, yogurt, ice cream, chocolate",
+    "nameTitle": "Shopping list",
+    "recordId": "48260175-08f8-4a57-9339-36a006142881",
+    "archived": false,
+    "createDate": "August 7, 2023"
+  },
+  {
+    "categoryId": "2",
+    "categoryName": "Random Thought",
+    "categoryImg": "iconRandomThought",
+    "content": "The big bang theory",
+    "nameTitle": "The theory",
+    "recordId": "d3c6cd3f-ebec-49b8-aa2d-4bf079b1e901",
+    "archived": true,
+    "createDate": "August 7, 2023"
+  },
+  {
+    "categoryId": "2",
+    "categoryName": "Random Thought",
+    "categoryImg": "iconRandomThought",
+    "content": "Bread, milk, tomatoes, eggplants, yogurt, ice cream, chocolate",
+    "nameTitle": "The theory vvvvv",
+    "recordId": "40c6c59c-fb89-400d-a219-50720db28986",
+    "archived": false,
+    "createDate": "August 7, 2023"
+  },
+  {
+    "categoryId": "2",
+    "categoryName": "Random Thought",
+    "categoryImg": "iconRandomThought",
+    "content": "Bread, milk, tomatoes, eggplants, yogurt, ice cream, chocolate",
+    "nameTitle": "The theory vvvvv ggg tata",
+    "recordId": "114b3462-e49b-41c9-b3a6-4a14040005ed",
+    "archived": false,
+    "createDate": "August 7, 2023"
+  },
+  {
+    "categoryId": "string",
+    "categoryName": "string",
+    "categoryImg": "string",
+    "content": "string",
+    "nameTitle": "string",
+    "recordId": "db2f89cd-032f-4ea0-ae55-cebae08bd0e0",
+    "archived": false,
+    "createDate": "August 7, 2023"
+  }
 ]
