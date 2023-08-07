@@ -1,5 +1,4 @@
 import Joi from 'joi';
-// const { object, string } = Joi;
 
 const noteSchema = Joi.object({
   categoryId: Joi.string().required(),
@@ -9,4 +8,17 @@ const noteSchema = Joi.object({
   nameTitle: Joi.string().required(),
 });
 
-export default noteSchema;
+const patchNoteSchema = Joi.object({
+  categoryId: Joi.string(),
+  categoryName: Joi.string(),
+  categoryImg: Joi.string(),
+  content: Joi.string(),
+  nameTitle: Joi.string(),
+  archived: Joi.boolean(),
+});
+const schemas = {
+  noteSchema,
+  patchNoteSchema,
+};
+
+export default schemas;

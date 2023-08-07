@@ -74,6 +74,19 @@ const addNote = async (body: INote) => {
   return body;
 };
 
-const notes = { listNotes, getNotesById, statsNotes, deleteNote, addNote };
+const updateNote = async (id: string, body: INote) => {
+  console.log(id);
+  console.log(body);
+  const notes = await listNotes();
+  const index = notes.findIndex((item) => item.recordId === id);
+  if (index === -1) {
+    return null;
+  }
+  notes[index] = { ...notes[index], ...body };
+  await writeFile(notesPath, JSON.stringify(notes, null, 2));
+  return notes[index];
+};
+
+const notes = { listNotes, getNotesById, statsNotes, deleteNote, addNote, updateNote };
 
 export default notes;

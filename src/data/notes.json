@@ -1,11 +1,11 @@
 [
   {
-    "categoryId": "1",
-    "categoryName": "Task",
-    "categoryImg": "iconListCheck",
+    "categoryId": "3",
+    "categoryName": "Ideaggg",
+    "categoryImg": "iconQuote",
     "createDate": "August 08, 2023",
-    "content": "Move the trip to the theater from 08.08.2023 to 08.12.2023",
-    "nameTitle": "Theater",
+    "content": "Bread, milk, tomatoes, eggplants, yogurt, ice cream, chocolate",
+    "nameTitle": "Shopping list",
     "recordId": "166356581685225",
     "archived": false
   },
@@ -118,13 +118,23 @@
     "createDate": "August 7, 2023"
   },
   {
-    "categoryId": "1",
-    "categoryName": "Task",
-    "categoryImg": "iconListCheck",
+    "categoryId": "3",
+    "categoryName": "Ideag",
+    "categoryImg": "iconQuote",
     "content": "Bread, milk, tomatoes, eggplants, yogurt, ice cream, chocolate",
     "nameTitle": "Shopping list",
     "recordId": "e2e8a0fc-677b-4a36-b9e7-fc1e1f6f9915",
     "archived": false,
+    "createDate": "August 7, 2023"
+  },
+  {
+    "categoryId": "2",
+    "categoryName": "Random Thought",
+    "categoryImg": "iconRandomThought",
+    "content": "The big bang theory",
+    "nameTitle": "The theory",
+    "recordId": "d3c6cd3f-ebec-49b8-aa2d-4bf079b1e901",
+    "archived": true,
     "createDate": "August 7, 2023"
   }
 ]

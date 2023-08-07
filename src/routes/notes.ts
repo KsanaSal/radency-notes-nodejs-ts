@@ -5,7 +5,7 @@ const router = express.Router();
 import notesOperations from '../data/notes.js';
 import HttpError from '../helpers/httpError.js';
 import validation from '../middlewares/validation.js';
-import noteSchema from '../schemas/note.js';
+import schemas from '../schemas/note.js';
 
 router.get('/', async (req, res, next) => {
   try {
@@ -59,13 +59,30 @@ router.delete('/:id', async (req, res, next) => {
   }
 });
 
-router.post('/', validation(noteSchema), async (req, res, next) => {
+router.post('/', validation(schemas.noteSchema), async (req, res, next) => {
   try {
     const note = await notesOperations.addNote(req.body);
     res.status(201).json({
       status: 'success',
       code: 201,
       data: { note },
+    });
+  } catch (error) {
+    next(error);
+  }
+});
+
+router.patch('/:id', validation(schemas.patchNoteSchema), async (req, res, next) => {
+  try {
+    const { id } = req.params;
+    const result = await notesOperations.updateNote(id, req.body);
+    if (!result) {
+      throw HttpError(404);
+    }
+    res.json({
+      status: 'success',
+      code: 200,
+      data: { result },
     });
   } catch (error) {
     next(error);
