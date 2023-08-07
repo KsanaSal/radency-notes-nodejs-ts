@@ -2,8 +2,11 @@ import express, { NextFunction, Request, Response } from 'express';
 import logger from 'morgan';
 import cors from 'cors';
 import notesRouter from './routes/notes.js';
+import { setupSwagger } from './swagger.js';
 
 const app = express();
+
+setupSwagger(app);
 
 const formatsLogger = app.get('env') === 'development' ? 'dev' : 'short';
 

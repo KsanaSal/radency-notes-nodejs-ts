@@ -142,8 +142,18 @@
     "categoryName": "Random Thought",
     "categoryImg": "iconRandomThought",
     "content": "Bread, milk, tomatoes, eggplants, yogurt, ice cream, chocolate",
-    "nameTitle": "The theory vvvvv ggg",
-    "recordId": "9b20d890-bbf4-41a3-81e6-fd9868fd853a",
+    "nameTitle": "The theory vvvvv ggg tata",
+    "recordId": "114b3462-e49b-41c9-b3a6-4a14040005ed",
+    "archived": false,
+    "createDate": "August 7, 2023"
+  },
+  {
+    "categoryId": "string",
+    "categoryName": "string",
+    "categoryImg": "string",
+    "content": "string",
+    "nameTitle": "string",
+    "recordId": "db2f89cd-032f-4ea0-ae55-cebae08bd0e0",
     "archived": false,
     "createDate": "August 7, 2023"
   }

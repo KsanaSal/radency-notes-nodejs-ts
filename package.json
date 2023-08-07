@@ -34,6 +34,8 @@
     "express": "^4.16.4",
     "joi": "^17.9.2",
     "morgan": "^1.10.0",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.0",
     "uuid": "^9.0.0"
   }
 }
